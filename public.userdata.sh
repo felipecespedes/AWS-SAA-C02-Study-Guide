@@ -2,6 +2,7 @@
 su ec2-user
 sudo yum install httpd -y
 sudo service httpd start
+# sudo chkconfig httpd on
 sudo su -c "cat > /var/www/html/index.html <<EOL
 <html>
 	<head>
